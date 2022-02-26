@@ -31,10 +31,10 @@
 // | SHIFT |  Z  |  X  |  C   |  D   |  V   |                                          |  K   |  M    |  ,    |  .   |   /   |  CTRL |
 // |       |     |     |  |   GUI    |   BSPCE   |    ESC    |       |   ENTER   |   SPACE   |   SPACE   |    |      |       |       |
 		bindings = <
-	    &kp TAB		&kp Q		&kp W		&kp F		&kp P		&kp B	 		&kp J	&kp L		&kp O			&kp Y		&kp SEMI	&kp BSPC
-	    &kp TAB		&kp A		&kp R		&kp S		&kp T		&kp G	 		&kp H	&kp N		&kp E			&kp I		&kp U		&kp SQT
-	    &kp LSHIFT	&kp Z		&kp X		&kp C		&kp D		&kp V	 		&kp K	&kp M		&kp COMMA		&kp DOT		&kp FSLH	&kp RCTRL
-	    &kp LS(LG(TAB))	&kp LCTL	&kp LALT	&kp LGUI	&kp BSPC	&kp ESC 	&kp RET		&kp SPACE	&to 1		&kp RALT	&kp RSHIFT	&kp LG(TAB)
+	    &kp TAB			&kp Q		&kp W		&kp F		&kp P		&kp B	 		&kp J	&kp L		&kp O			&kp Y		&kp SEMI	&kp BSPC
+	    &kp TAB			&kp A		&kp R		&kp S		&kp T		&kp G	 		&kp H	&kp N		&kp E			&kp I		&kp U		&kp SQT
+	    &kp LSHIFT		&kp Z		&kp X		&kp C		&kp D		&kp V	 		&kp K	&kp M		&kp COMMA		&kp DOT		&kp FSLH	&kp RSHIFT
+	    &kp LS(LG(TAB))	&kp LCTL	&kp LALT	&kp LGUI	&kp BSPC	&kp ESC 		&kp RET	&kp SPACE	&to 1			&kp RALT	&kp RSHIFT	&kp LG(TAB)
 		>;
 		
 		};
@@ -46,10 +46,24 @@
 // | SHIFT |  Z  |  X  |  C   |  D   |  V   |                                          |  0   |  1    |  2    |  3   |   /   |  CTRL |
 // |       |     |     |  |   GUI    |   BSPCE   |    ESC    |       |   ENTER   |   SPACE   |   SPACE   |    |      |       |       |
 		bindings = <
-	    &kp TAB		&kp Q		&kp W		&kp LPAR	&kp RPAR	&kp PIPE		&kp J		&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_MINUS	&kp BSPC
-	    &kp TAB		&kp A		&kp R		&kp LBKT	&kp RBKT	&kp GRAVE		&kp H		&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_PLUS		&kp SQT
-	    &kp LSHIFT	&kp Z		&kp X		&kp LBRC	&kp RBRC	&kp V	 		&kp KP_N0	&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp RCTRL
-	    &kp LS(LG(TAB))	&kp LCTL	&kp LALT	&to 0	&kp BSPC	&kp ESC 	&kp RET		&kp SPACE	&kp RGUI	&kp RALT		&kp RSHIFT		&kp LG(TAB)
+	    &kp TAB			&kp EXCL	&kp W			&kp LPAR	&kp RPAR	&kp PIPE		&kp J		&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_MINUS	&kp BSPC
+	    &kp TAB			&kp A		&kp DOLLAR		&kp LBKT	&kp RBKT	&kp GRAVE		&kp H		&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_PLUS		&kp SQT
+	    &kp LSHIFT		&kp Z		&kp X			&kp LBRC	&kp RBRC	&kp V	 		&kp KP_N0	&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp RCTRL
+	    &kp LS(LG(TAB))	&kp LCTL	&kp LALT		&to 0		&kp BSPC	&kp ESC 		&kp RET		&kp SPACE	&to 2		&kp RALT	&kp RSHIFT		&kp LG(TAB)
+		>;
+		
+		};
+		arrow_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  TAB  |  Q  |  W  |  F   |  P   |  B   |                                          |  J   |  L    |  O    |  Y   |   :   | BSPCE |
+// |  LCK  |  A  |  R  |  S   |  T   |  G   |                                          |  H   |  N    |  E    |  I   |   U   |   '   |
+// | SHIFT |  Z  |  X  |  C   |  D   |  V   |                                          |  K   |  M    |  ,    |  .   |   /   |  CTRL |
+// |       |     |     |  |   GUI    |   BSPCE   |    ESC    |       |   ENTER   |   SPACE   |   SPACE   |    |      |       |       |
+		bindings = <
+	    &kp TAB			&kp Q		&kp W		&kp UP		&kp P		&kp B	 		&kp J		&kp L		&kp O			&kp Y		&kp SEMI	&kp BSPC
+	    &kp TAB			&kp A		&kp LEFT	&kp DOWN	&kp RIGHT	&kp G	 		&kp LEFT	&kp DOWN	&kp UP			&kp RIGHT	&kp U		&kp SQT
+	    &kp LSHIFT		&kp Z		&kp X		&kp C		&kp D		&kp V	 		&kp K		&kp M		&kp COMMA		&kp DOT		&kp FSLH	&kp RSHIFT
+	    &kp LS(LG(TAB))	&kp LCTL	&kp LALT	&to 0		&kp BSPC	&kp ESC 		&kp RET		&kp SPACE	&to 1			&kp RALT	&kp RSHIFT	&kp LG(TAB)
 		>;
 		
 		};
