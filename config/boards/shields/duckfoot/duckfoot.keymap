@@ -33,7 +33,7 @@
 		bindings = <
 	    &kp TAB			&kp Q		&kp W		&kp F		&kp P		&kp B	 	&kp J	&kp L			&kp O		&mt LA(I) Y		&kp SEMI	&kp BSPC
 	    &kp TAB			&kp A		&kp R		&kp S		&kp T		&kp G	 	&kp H	&mt LA(E) N		&kp E		&mt LA(GRAVE) I	&kp U		&kp SQT
-	    &kp LSHIFT		&kp Z		&kp X		&mt LA(C) C	&kp D		&kp V	 	&kp K	&mt LA(O) M		&kp COMMA	&kp DOT			&kp FSLH	&kp RSHIFT
+	    &kp LSHIFT		&kp Z		&kp X		&mt LA(C) C	&kp D		&kp V	 	&kp K	&mt LA(U) M		&kp COMMA	&kp DOT			&kp FSLH	&kp RSHIFT
 	    &kp LS(LG(TAB))	&kp LCTL	&kp LALT	&kp LGUI	&lt 1 BSPC	&lt 2 ESC 	&kp RET	&kp SPACE		&to 1		&kp RALT		&kp RSHIFT	&kp LG(TAB)
 		>;
 		
