@@ -63,7 +63,7 @@
 	    &kp TAB			&kp Q		&kp W		&kp UP		&kp P		&kp B	 		&kp J		&kp L		&kp O			&kp Y		&kp SEMI	&kp BSPC
 	    &kp TAB			&kp A		&kp LEFT	&kp DOWN	&kp RIGHT	&kp G	 		&kp LEFT	&kp DOWN	&kp UP			&kp RIGHT	&kp U		&kp SQT
 	    &kp LSHIFT		&kp Z		&kp X		&kp C		&kp D		&kp V	 		&kp K		&kp M		&kp COMMA		&kp DOT		&kp FSLH	&kp RSHIFT
-	    &kp LS(LG(TAB))	&kp LCTL	&kp LALT	&to 0		&kp RET		&kp ESC 		&kp BSPDC	&kp SPACE	&to 1			&kp RALT	&kp RSHIFT	&kp LG(TAB)
+	    &kp LS(LG(TAB))	&kp LCTL	&kp LALT	&to 0		&kp RET		&kp ESC 		&kp BSPC	&kp SPACE	&to 1			&kp RALT	&kp RSHIFT	&kp LG(TAB)
 		>;
 		
 		};
