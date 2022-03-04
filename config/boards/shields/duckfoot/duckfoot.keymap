@@ -28,13 +28,13 @@
 //  ---------------------------------------------------------------------------------------------------------------------------------
 // |  TAB  |  Q  |  W  |  F   |  P   |  B   |                                          |  J   |  L    |  O    |  Y   |   :   | BSPCE |
 // |  LCK  |  A  |  R  |  S   |  T   |  G   |                                          |  H   |  N    |  E    |  I   |   U   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  D   |  V   |                                          |  K   |  M    |  ,    |  .   |   /\   |  CTRL |
+// | SHIFT |  Z  |  X  |  C   |  D   |  V   |                                          |  K   |  M    |  ,    |  .   |  /\   |  CTRL |
 // |       |     |     |  |   GUI    |   BSPCE   | to layer 2/ESC |       |   ENTER   |  SPACE  | layer 1 |    |     |       |       |
 		bindings = <
 	    &kp TAB		&kp Q		&kp W		&kp F		&mt LS(LG(N4)) P	&kp B	 		&kp J			&mt LC(LS(C_PWR)) L	&kp O			&mt LA(I) Y			&kp SEMI		&kp BSPC
-	    &kp CAPS	&kp A		&kp R		&kp S		&kp T				&kp G	 		&kp H			&mt LA(E) N			&kp E			&mt LA(GRAVE) I		&kp U			&mt GRAVE SQT
-	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C	&kp D				&kp V	 		&kp K			&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
-	    &kp LG(W)	&kp LCTL	&kp LALT	&kp LGUI	&mt RSHIFT BSPC		&lt 1 ESC		&lt 2 RET 		&kp SPACE			&mt LCTL TAB 	&kp RALT			&kp RSHIFT		&kp LG(Q)
+	    &kp LALT	&kp A		&kp R		&kp S		&kp T				&kp G	 		&kp H			&mt LA(E) N			&kp E			&mt LA(GRAVE) I		&kp U			&mt GRAVE SQT
+	    &kp LCTL	&kp Z		&kp X		&mt LA(C) C	&kp D				&kp V	 		&kp K			&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
+	    &kp X		&kp X		&kp LG(W)	&kp LGUI	&mt LSHIFT BSPC		&lt 1 ESC		&lt 2 RET 		&kp SPACE			&mt RCTL TAB 	&kp LG(Q)			&kp X			&kp X
 		>;
 
 		};
