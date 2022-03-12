@@ -29,7 +29,7 @@
 	        egrave: egrave_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "EGRAVE";
-		        #binding-cells = <0>;
+		        #binding-cells = <1>;
 		        bindings = <&kp LA(GRAVE)>, <&kp E>;
 	        };
         
@@ -41,29 +41,29 @@
                 
        		default_layer {
 		bindings = <
-	    &kp TAB		&kp Q		&kp W		&kp F		&mt LS(LG(N4)) P	&kp B	 		&kp J			&mt LC(LS(C_PWR)) L	&kp O			&mt LA(I) Y			&kp SEMI		&kp BSPC
-	    &caps_word	&lt 3 A		&kp R		&kp S		&kp T				&kp G	 		&kp H			&mt LA(E) N			&lt 3 E			&mt LA(GRAVE) I		&kp U			&mt GRAVE SQT
-	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C	&kp D				&kp V	 		&kp K			&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
-	    &kp CAPS	&kp LCTL	&kp LALT	&kp LGUI	&mt LSHIFT BSPC		&lt 1 ESC		&lt 2 LC(BSPC) 	&mt UNDER SPACE		&mt RCTL RET  	&kp LC(X)			&kp LC(C)		&kp LC(V)
+	    &kp TAB		&kp Q		&kp W		&kp F		&mt LS(LG(N4)) P	&kp B	 			&kp J			&mt LC(LS(C_PWR)) L	&kp O			&mt LA(I) Y			&kp SEMI		&kp BSPC
+	    &caps_word	&lt 3 A		&kp R		&kp S		&kp T				&kp G	 			&kp H			&mt LA(E) N			&lt 3 E			&mt LA(GRAVE) I		&kp U			&mt GRAVE SQT
+	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C	&kp D				&kp V	 			&kp K			&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
+	    &kp CAPS	&kp LCTL	&kp LALT	&kp LGUI	&mt LSHIFT BSPC		&lt 1 ESC			&lt 2 LC(BSPC) 	&mt UNDER SPACE		&mt RCTL RET  	&kp LC(X)			&kp LC(C)		&kp LC(V)
 		>;
 
 		};
 		
 			num_layer {
 		bindings = <
-	    &kp TAB			&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp PIPE		&kp KP_PLUS		&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_DIVIDE	&kp KP_MULTIPLY
-	    &kp caps_word	&kp HASH	&mt LA(LS(AT)) DOLLAR	&kp LPAR	&kp RPAR	&kp TILDE		&kp KP_MINUS	&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_N0		&kp KP_MINUS
-	    &kp LSHIFT		&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp UNDER 		&kp KP_EQUAL	&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp KP_EQUAL
-	    &kp LS(LG(TAB))	&kp LCTL	&kp LALT				&to 0		&kp RET		&kp ESC 		&kp BSPC		&kp SPACE	&to 2		&kp RALT	&kp RSHIFT		&kp LG(TAB)
+	    &trans	&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp PIPE			&kp KP_PLUS		&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_DIVIDE	&kp KP_MULTIPLY
+	    &trans	&kp HASH	&mt LA(LS(AT)) DOLLAR	&kp LPAR	&kp RPAR	&kp TILDE			&kp KP_MINUS	&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_N0		&kp KP_MINUS
+	    &trans	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp UNDER 			&kp KP_EQUAL	&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp KP_EQUAL
+	    &trans	&trans		&trans					&trans		&trans		&trans 				&trans			&trans		&trans		&trans		&trans			&trans
 		>;
 		
 		};
 			arrow_layer {
 		bindings = <
-	    &kp TAB			&kp F1		&kp F2		&kp F3		&kp F4		&kp F5	 		&kp K_MUTE	&kp C_VOL_DN	&kp C_VOL_UP	&kp C_PP	&kp SEMI	&kp BSPC
-	    &kp CAPS		&kp F6		&kp F7  	&kp F8		&kp F9		&kp F10	 		&kp LEFT	&kp DOWN		&kp UP			&kp RIGHT	&kp U		&kp SQT
-	    &kp LSHIFT		&kp Z		&kp X		&kp C		&kp D		&kp V	 		&kp K		&kp C_BRI_DN	&kp C_BRI_UP	&kp DOT		&kp FSLH	&kp RSHIFT
-	    &kp LS(LG(TAB))	&kp LCTL	&kp LALT	&to 0		&kp RET		&kp ESC 		&kp BSPC	&kp SPACE		&to 1			&kp RALT	&kp RSHIFT	&kp LG(TAB)
+	    &trans	&kp F1	&kp F2	&kp F3	&kp F4	&kp F5	 		&kp K_MUTE	&kp C_VOL_DN	&kp C_VOL_UP	&kp C_PP	&trans		&trans
+	    &trans	&kp F6	&kp F7  &kp F8	&kp F9	&kp F10	 		&kp LEFT	&kp DOWN		&kp UP			&kp RIGHT	&trans		&trans
+	    &trans	&trans	&trans	&trans	&trans	&trans	 		&trans		&kp C_BRI_DN	&kp C_BRI_UP	&trans		&trans		&trans
+	    &trans	&trans	&trans	&trans	&trans	&trans 			&trans		&trans			&trans			&trans		&trans		&trans
 		>;
 		
 		};
