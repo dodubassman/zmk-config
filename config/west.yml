@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: okke-formsma
-      revision: macro
+      revision: macros
       import: app/west.yml
   self:
     path: config
