@@ -29,7 +29,7 @@
 	        egrave: egrave_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "EGRAVE";
-		        #binding-cells = <1>;
+		        #binding-cells = <0>;
 		        bindings = <&kp LA(GRAVE)>, <&kp E>;
 	        };
         
