@@ -95,10 +95,10 @@
                 
        		default_layer {
 		bindings = <
-	    &kp TAB		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J			&mt LC(LS(C_PWR)) L	&lt 4 O			&kp Y				&kp SEMI		&kp BSPC
-	    &caps_word	&lt 3 A		&kp R		&kp S			&kp T				&kp G	 			&kp H			&kp N				&lt 3 E			&lt 4 I				&lt 3 U			&mt GRAVE SQT
-	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C		&kp D				&kp V	 			&kp K			&kp M				&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
-	    &kp CAPS	&kp LCTL	&kp LALT	&mt LGUI RET	&mt LSHIFT BSPC		&lt 1 ESC			&lt 2 TAB		&mt UNDER SPACE		&mt RCTL RET  	&kp LC(X)			&kp LC(C)		&kp LC(V)
+	    &kp TAB		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(C_PWR)) L	&lt 4 O			&kp Y				&kp SEMI		&kp BSPC
+	    &caps_word	&lt 3 A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&kp N				&lt 3 E			&lt 4 I				&lt 3 U			&mt GRAVE SQT
+	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C		&kp D				&kp V	 			&kp K		&kp M				&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
+	    &kp CAPS	&kp LCTL	&kp LALT	&mt LGUI RET	&mt LSHIFT BSPC		&lt 1 ESC			&lt 2 TAB	&mt UNDER SPACE		&mt RCTL RET  	&kp LC(X)			&kp LC(C)		&kp LC(V)
 		>;
 
 		};
