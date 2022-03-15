@@ -131,7 +131,7 @@
 		bindings = <
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&ecirc	&ucirc	&trans
 	    &trans	&trans	&agrave &trans	&trans	&trans			&trans	&eacute	&trans	&egrave	&trans	&trans
-	    &trans	&trans	&acirc	trans	&trans	&trans			&trans	&euml	&trans	&trans	&trans	&trans
+	    &trans	&trans	&acirc	&trans	&trans	&trans			&trans	&euml	&trans	&trans	&trans	&trans
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&trans	&trans	&trans
 		>;
 		
