@@ -32,43 +32,43 @@
 		        #binding-cells = <0>;
 		        bindings = <&kp LA(GRAVE)>, <&kp E>;
 	        };
-	        ‌eacute: ‌eacute_macro {
+	        eacute: eacute_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "EACUTE";
 		        #binding-cells = <0>;
 		        bindings = <&kp LA(E)>, <&kp E>;
 	        };
-	        ‌ecirc: ‌ecirc_macro {
+	        ecirc: ecirc_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "ECIRC";
 		        #binding-cells = <0>;
 		        bindings = <&kp LA(I)>, <&kp E>;
 	        };
-	        ‌euml: ‌euml_macro {
+	        euml: euml_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "EUML";
 		        #binding-cells = <0>;
 		        bindings = <&kp LA(U)>, <&kp E>;
 	        };
-	        ‌ocirc: ‌ocirc_macro {
+	        ocirc: ocirc_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "OCIRC";
 		        #binding-cells = <0>;
 		        bindings = <&kp LA(I)>, <&kp O>;
 	        };
-	        ‌ouml: ‌ouml_macro {
+	        ouml: ouml_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "OUML";
 		        #binding-cells = <0>;
 		        bindings = <&kp LA(U)>, <&kp O>;
 	        };
-	        ‌icirc: ‌icirc_macro {
+	        icirc: icirc_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "ICIRC";
 		        #binding-cells = <0>;
 		        bindings = <&kp LA(I)>, <&kp I>;
 	        };
-	        ‌iuml: ‌iuml_macro {
+	        iuml: iuml_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "IUML";
 		        #binding-cells = <0>;
@@ -80,7 +80,7 @@
 		        #binding-cells = <0>;
 		        bindings = <&kp LA(GRAVE)>, <&kp U>;
 	        };
-	        ucirc: ‌ucirc_macro {
+	        ucirc: ucirc_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "UCIRC";
 		        #binding-cells = <0>;
@@ -98,7 +98,7 @@
 	    &kp TAB		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(C_PWR)) L	&lt 4 O			&kp Y				&kp SEMI		&kp BSPC
 	    &caps_word	&lt 3 A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&kp N				&lt 3 E			&lt 4 I				&lt 3 U			&mt GRAVE SQT
 	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C		&kp D				&kp V	 			&kp K		&kp M				&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
-	    &kp CAPS	&kp LCTL	&kp LALT	&mt LGUI RET	&mt LSHIFT BSPC		&lt 1 ESC			&lt 2 TAB	&mt UNDER SPACE		&mt RCTL RET  	&kp LC(X)			&kp LC(C)		&kp LC(V)
+	    &kp CAPS	&kp LCTL	&kp LALT	&mt LGUI RET	&mt LSHIFT BSPC		&lt 1 ESC			&lt 2 TAB	&mt UNDER SPACE		&mt RCTL RET  	&kp LG(X)			&kp LG(C)		&kp LG(V)
 		>;
 
 		};
@@ -114,16 +114,16 @@
 		};
 			arrow_layer {
 		bindings = <
-	    &trans	&kp F1	&kp F2	&kp F3	&kp F4	&kp F5	 		&kp K_MUTE	&kp C_VOL_DN	&kp C_VOL_UP	&kp C_PP	&trans		&trans
-	    &trans	&kp F6	&kp F7  &kp F8	&kp F9	&kp F10	 		&kp LEFT	&kp DOWN		&kp UP			&kp RIGHT	&trans		&trans
-	    &trans	&trans	&trans	&trans	&trans	&trans	 		&trans		&kp C_BRI_DN	&kp C_BRI_UP	&trans		&trans		&trans
-	    &trans	&trans	&trans	&trans	&trans	&trans 			&trans		&trans			&trans			&trans		&trans		&trans
+	    &trans	&kp F1	&kp F2	&kp F3	&kp F4	&kp F5			&kp K_MUTE	&kp C_VOL_DN	&kp C_VOL_UP	&kp C_PP	&trans		&trans
+	    &trans	&kp F6	&kp F7  &kp F8	&kp F9	&kp F10			&kp LEFT	&kp DOWN		&kp UP			&kp RIGHT	&trans		&trans
+	    &trans	&trans	&trans	&trans	&trans	&trans			&trans		&kp C_BRI_DN	&kp C_BRI_UP	&trans		&trans		&trans
+	    &trans	&trans	&trans	&trans	&trans	&trans			&trans		&trans			&trans			&trans		&trans		&trans
 		>;
 		
 		};
 			ae_layer {
 		bindings = <
-	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&‌ecirc	&ucirc	&trans
+	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&ecirc	&ucirc	&trans
 	    &trans	&trans	&agrave &trans	&trans	&trans			&trans	&eacute	&trans	&egrave	&ugrave	&trans
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&euml	&trans	&trans	&trans	&trans
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&trans	&trans	&trans
@@ -132,7 +132,7 @@
 		};
 			oui_layer {
 		bindings = <
-	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&ocirc	&trans	&‌ouml	&trans	&trans
+	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&ocirc	&trans	&ouml	&trans	&trans
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&icirc	&trans	&iuml
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&trans	&trans	&trans
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&trans	&trans	&trans
