@@ -116,17 +116,17 @@
 	    &kp TAB		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(C_PWR)) L	&lt 4 O			&kp Y				&kp SEMI		&kp BSPC
 	    &caps_word	&lt 3 A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&kp N				&lt 3 E			&lt 4 I				&lt 4 U			&mt GRAVE SQT
 	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C		&kp D				&kp V	 			&kp K		&kp M				&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
-	    &kp CAPS	&kp LCTL	&kp LALT	&mt LGUI RET	&mt LSHIFT LG(BSPC)	&lt 1 ESC			&lt 2 TAB	&mt UNDER SPACE		&mt RCTL RET  	&kp LG(X)			&kp LG(C)		&kp LG(V)
+	    &kp CAPS	&kp LCTL	&kp LALT	&mt LGUI RET	&mt LSHIFT LC(BSPC)	&lt 1 ESC			&lt 2 TAB	&mt UNDER SPACE		&mt RCTL RET  	&kp LG(X)			&kp LG(C)		&kp LG(V)
 		>;
 
 		};
 		
 			num_layer {
 		bindings = <
-	    &trans	&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp PIPE			&mt KP_MINUS &dasharrw	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_DIVIDE	&kp KP_MINUS
-	    &trans	&kp HASH	&mt LA(LS(AT)) DOLLAR	&kp LPAR	&kp RPAR	&kp TILDE			&kp KP_PLUS				&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_N0		&kp KP_MULTIPLY
-	    &trans	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp UNDER 			&kp KP_EQUAL &eqarrw	&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp KP_EQUAL
-	    &trans	&trans		&trans					&trans		&trans		&trans 				&trans					&trans		&trans		&trans		&trans			&trans
+	    &trans	&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp PIPE			&kp KP_PLUS	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_MINUS	&kp KP_EQUAL
+	    &trans	&kp HASH	&mt LA(LS(AT)) DOLLAR	&kp LPAR	&kp RPAR	&kp TILDE			&dasharrw 	&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_N0		&kp KP_MULTIPLY
+	    &trans	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp UNDER 			&eqarrw		&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp KP_DIVIDE
+	    &trans	&trans		&trans					&trans		&trans		&trans 				&trans		&trans		&trans		&trans		&trans			&trans
 		>;
 		
 		};
