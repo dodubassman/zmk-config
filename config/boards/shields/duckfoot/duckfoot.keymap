@@ -123,9 +123,9 @@
 		
 			num_layer {
 		bindings = <
-	    &trans	&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp PIPE			&mt KP_MINUS DASHARRW	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_DIVIDE	&kp KP_MINUS
+	    &trans	&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp PIPE			&mt KP_MINUS dasharrw	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_DIVIDE	&kp KP_MINUS
 	    &trans	&kp HASH	&mt LA(LS(AT)) DOLLAR	&kp LPAR	&kp RPAR	&kp TILDE			&kp KP_PLUS				&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_N0		&kp KP_MULTIPLY
-	    &trans	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp UNDER 			&kp KP_EQUAL EQARRW		&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp KP_EQUAL
+	    &trans	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp UNDER 			&kp KP_EQUAL eqarrw		&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp KP_EQUAL
 	    &trans	&trans		&trans					&trans		&trans		&trans 				&trans					&trans		&trans		&trans		&trans			&trans
 		>;
 		
