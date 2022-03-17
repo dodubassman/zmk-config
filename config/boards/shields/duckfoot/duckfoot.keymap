@@ -20,78 +20,6 @@
 
 / { 
         behaviors {
-            agrave: agrave_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "AGRAVE";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(GRAVE)>, <&kp A>;
-	        };
-	        acirc: acirc_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "ACIRC";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(I)>, <&kp A>;
-	        };
-	        egrave: egrave_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "EGRAVE";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(GRAVE)>, <&kp E>;
-	        };
-	        eacute: eacute_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "EACUTE";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(E)>, <&kp E>;
-	        };
-	        ecirc: ecirc_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "ECIRC";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(I)>, <&kp E>;
-	        };
-	        euml: euml_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "EUML";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(U)>, <&kp E>;
-	        };
-	        ocirc: ocirc_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "OCIRC";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(I)>, <&kp O>;
-	        };
-	        ouml: ouml_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "OUML";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(U)>, <&kp O>;
-	        };
-	        icirc: icirc_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "ICIRC";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(I)>, <&kp I>;
-	        };
-	        iuml: iuml_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "IUML";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(U)>, <&kp I>;
-	        };
-	        ugrave: ugrave_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "UGRAVE";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(GRAVE)>, <&kp U>;
-	        };
-	        ucirc: ucirc_macro {
-		        compatible = "zmk,behavior-macro";
-		        label = "UCIRC";
-		        #binding-cells = <0>;
-		        bindings = <&kp LA(I)>, <&kp U>;
-	        };
 	        eqarrw: eqarrw_macro {
 		        compatible = "zmk,behavior-macro";
 		        label = "EQARRW";
@@ -106,21 +34,31 @@
 	        };
         
         };
-        
-        
-        keymap {
-                compatible = "zmk,keymap";
-                
-       		default_layer {
-		bindings = <
-	    &kp TAB		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(C_PWR)) L	&lt 4 O			&kp Y				&kp SEMI		&kp BSPC
-	    &caps_word	&lt 3 A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&kp N				&lt 3 E			&lt 4 I				&lt 4 U			&mt GRAVE SQT
-	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C		&kp D				&kp V	 			&kp K		&kp M				&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
-	    &kp CAPS	&kp LCTL	&kp LALT	&mt LGUI RET	&mt LSHIFT LA(BSPC)	&lt 1 ESC			&lt 2 TAB	&mt UNDER SPACE		&mt RCTL RET  	&kp LG(X)			&kp LG(C)		&kp LG(V)
-		>;
 
+        combos {
+            compatible = "zmk,combos";
+            combo_esc {
+                timeout-ms = <50>;
+                key-positions = <15 16>;
+                bindings = <&kp ESC>;
+            };
+            combo_ent {
+                timeout-ms = <50>;
+                key-positions = <18 19>;
+                bindings = <&kp RET>;
+            };
+        };
+
+        keymap {
+            compatible = "zmk,keymap";
+            default_layer {
+		bindings = <
+	    &kp TAB		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(C_PWR)) L	&kp O			&mt LA(I) Y			&kp SEMI		&kp BSPC
+	    &caps_word	&kp A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&mt LA(E) N			&kp E			&mt LA(GRAVE) I		&kp U			&mt GRAVE SQT
+	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C		&kp D				&kp V	 			&kp K		&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
+	    &kp CAPS	&kp LCTL	&kp LALT	&mt LGUI RET	&mt LSHIFT LA(BSPC)	&lt 1 ESC			&mo 2		&mt UNDER SPACE		&mt RCTL RET  	&kp LG(X)			&kp LG(C)		&kp LG(V)
+		>;
 		};
-		
 			num_layer {
 		bindings = <
 	    &trans	&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp PIPE			&kp KP_PLUS	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_MINUS	&kp KP_EQUAL
@@ -128,7 +66,6 @@
 	    &trans	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp UNDER 			&eqarrw		&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp KP_DIVIDE
 	    &trans	&trans		&trans					&trans		&trans		&trans 				&trans		&trans		&trans		&trans		&trans			&trans
 		>;
-		
 		};
 			arrow_layer {
 		bindings = <
@@ -137,25 +74,6 @@
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans		&kp C_BRI_DN	&kp C_BRI_UP	&trans		&trans		&trans
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans		&trans			&trans			&trans		&trans		&trans
 		>;
-		
-		};
-			ae_layer {
-		bindings = <
-	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&ecirc	&ucirc	&trans
-	    &trans	&trans	&agrave &trans	&trans	&trans			&trans	&eacute	&trans	&egrave	&trans	&trans
-	    &trans	&trans	&acirc	&trans	&trans	&trans			&trans	&euml	&trans	&trans	&trans	&trans
-	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&trans	&trans	&trans
-		>;
-		
-		};
-			oui_layer {
-		bindings = <
-	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&ocirc	&trans	&ouml	&trans	&trans
-	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&icirc	&ugrave	&iuml	&trans
-	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&ucirc	&trans	&trans
-	    &trans	&trans	&trans	&trans	&trans	&trans			&trans	&trans	&trans	&trans	&trans	&trans
-		>;
-		
 		};
 	};
 };
