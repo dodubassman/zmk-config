@@ -56,7 +56,7 @@
 	    &kp TAB		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(C_PWR)) L	&kp O			&mt LA(I) Y			&mt KP_MINUS SEMI	&kp BSPC
 	    &caps_word	&kp A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&mt LA(E) N			&kp E			&mt LA(GRAVE) I		&kp U				&mt GRAVE SQT
 	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C		&kp D				&kp V	 			&kp K		&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH		&kp RSHIFT
-	    &kp CAPS	&kp LCTL	&kp LALT	&mt LGUI RET	&mt LSHIFT LA(BSPC)	&mo 1				&mo 2		&mt UNDER SPACE		&mt RCTL TAB  	&kp LG(X)			&kp LG(C)			&kp LG(V)
+	    &kp CAPS	&kp LCTL	&kp LALT	&kp LGUI		&mt LSHIFT BSPC 	&mo 1				&mo 2		&kp SPACE			&mt RCTL TAB	&kp LG(X)			&kp LG(C)			&kp LG(V)
 		>;
 		};
 			num_layer {
