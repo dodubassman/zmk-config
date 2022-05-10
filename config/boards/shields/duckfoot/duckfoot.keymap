@@ -53,23 +53,23 @@
             compatible = "zmk,keymap";
             default_layer {
 		bindings = <
-	    &kp TAB		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(C_PWR)) L	&kp O			&mt LA(I) Y			&mt KP_MINUS SEMI	&kp BSPC
-	    &caps_word	&kp A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&mt LA(E) N			&kp E			&mt LA(GRAVE) I		&kp U				&mt GRAVE SQT
-	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C		&kp D				&kp V	 			&kp K		&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH		&kp RSHIFT
-	    &kp CAPS	&kp LCTL	&kp LALT	&kp LGUI		&mt LSHIFT BSPC 	&mo 1				&mo 2		&kp SPACE			&mt RCTL TAB	&kp LG(X)			&kp LG(C)			&kp LG(V)
+	    &kp TAB		&kp Q		&kp W		&kp F			&mt LS(LG(N4)) P	&kp B	 			&kp J		&mt LC(LS(K_PWR)) L	&kp O			&mt LA(I) Y			&kp SEMI		&kp BSPC
+	    &caps_word	&kp A		&kp R		&kp S			&kp T				&kp G	 			&kp H		&mt LA(E) N			&kp E			&mt LA(GRAVE) I		&kp U			&mt GRAVE SQT
+	    &kp LSHIFT	&kp Z		&kp X		&mt LA(C) C		&kp D				&kp V	 			&kp K		&mt LA(U) M			&kp COMMA		&mt LA(SEMI) DOT	&mt BSLH FSLH	&kp RSHIFT
+	    &kp CAPS	&kp LCTL	&kp LALT	&kp LGUI		&mt LSHIFT BSPC 	&mo 1				&mo 2		&kp SPACE			&mt RCTL TAB	&kp LG(X)			&kp LG(C)		&kp LG(V)
 		>;
 		};
 			num_layer {
 		bindings = <
 	    &trans	&kp EXCL	&kp AT					&kp LBKT	&kp RBKT	&kp PIPE			&kp KP_PLUS	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_MINUS	&kp KP_EQUAL
 	    &trans	&kp HASH	&mt LA(LS(AT)) DOLLAR	&kp LPAR	&kp RPAR	&kp TILDE			&dasharrw 	&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_N0		&kp KP_MULTIPLY
-	    &trans	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp UNDER 			&eqarrw		&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp KP_DIVIDE
-	    &trans	&trans		&trans					&trans		&trans		&trans 				&trans		&trans		&trans		&trans		&trans			&trans
+	    &trans	&kp PERCENT	&kp AMPS				&kp LBRC	&kp RBRC	&kp KP_EQUAL		&eqarrw		&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT		&kp KP_DIVIDE
+	    &trans	&trans		&trans					&trans		&trans		&trans 				&trans		&kp UNDER		&trans		&trans		&trans			&trans
 		>;
 		};
 			arrow_layer {
 		bindings = <
-	    &trans	&kp F1	&kp F2	&kp F3	&kp F4	&kp F5			&kp K_MUTE	&kp C_VOL_DN	&kp C_VOL_UP	&kp C_PP	&trans		&trans
+	    &trans	&kp F1	&kp F2	&kp F3	&kp F4	&kp F5			&kp K_MUTE	&kp C_VOL_DN	&kp C_VOL_UP	&kp C_PP	&kp HOME	&kp END
 	    &trans	&kp F6	&kp F7  &kp F8	&kp F9	&kp F10			&kp LEFT	&kp DOWN		&kp UP			&kp RIGHT	&trans		&trans
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans		&kp C_BRI_DN	&kp C_BRI_UP	&trans		&trans		&trans
 	    &trans	&trans	&trans	&trans	&trans	&trans			&trans		&trans			&trans			&trans		&trans		&trans
