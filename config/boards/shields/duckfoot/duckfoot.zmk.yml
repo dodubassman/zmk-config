@@ -1,6 +1,6 @@
 file_format: "1"
-id: duckfoot3
-name: DuckFootv3 
+id: duckfoot2
+name: DuckFootV2 
 type: shield
 url: https://github.com/davidphilipbarr/Sweep
 requires: [pro_micro]
